@@ -1,0 +1,135 @@
+/*all*/
+
+div.container-fluid {
+    padding: 0;
+    overflow: hidden;
+}
+
+/*header*/
+
+#header .navbar {
+    padding: 1.5rem 1rem;
+}
+
+.header-text {
+    background-image: url(src/images/main-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-button {
+    margin-top: 5%;
+}
+
+.header-button a {
+    padding: 1% 2%;
+}
+
+.header-button a.btn-dark {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 80%;
+}
+
+.caption {
+    margin-top: 15%;
+}
+
+.caption-color {
+    color: #01BDD5;
+}
+
+/*about*/
+
+.about {
+    padding-top: 7%;
+}
+
+.about-block {
+    width: 80%;
+}
+
+.about-me span {
+    padding-top: 3%;
+}
+
+/*works*/
+
+#works {
+    background-color: #FCFCFC;
+}
+
+.latest-works {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    width: 80%;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h5.card-title a {
+    color: #1EC4D9;
+}
+
+/*offer*/
+
+#offer {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.offer-from {
+    width: 80%;
+}
+
+.icons {
+    background-color: #03BDD6;
+    border-radius: 50%; 
+    width: 68px;
+    height: 68px;
+    color: #fff;
+}
+
+.icons div i {
+    padding-top: 12%;
+}
+
+/*contact*/
+
+#contact {
+    background-color: #03BDD6;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.row .contact-button {
+    color: #03BDD6;
+    padding: 1% 2%;
+    font-weight: 500;
+}
+
+.what-think {
+    width: 80%;
+}
+
+/*footer*/
+
+#footer {
+    padding-top: 2.5%;
+}
+
+.copyright {
+    width: 80%;
+}
+
+.col-sm-6 a.fa {
+    text-decoration: none;
+}
