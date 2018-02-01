@@ -1,0 +1,99 @@
+body {
+    overflow-x: hidden;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+
+.con-pd {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+hr.fst-hr {
+    width: 50px;
+    height: 2px;
+    background: #DA5B40;
+}
+
+a.btn {
+    border-radius: 40px;
+    padding: 1% 2.5%;
+}
+
+/*header*/
+
+
+#header {
+    background-image: url(../../src/images/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-text {
+    margin-top: 20%;
+}
+
+.fst-paragraph {
+    padding: 2%;
+}
+
+.hr-white {
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+
+a.btn.btn-danger {
+    color: #fff;
+    background-color: #F05F40;
+    border-color: #F05F40;
+}
+
+.navbar {
+    width: 80%;
+}
+
+.nav-link {
+    color: white;
+}
+
+/*start*/
+
+
+.start-container {
+    background-color: #F05F40;
+}
+
+/*services*/
+
+.services-block {
+    width: 80%
+}
+
+.col-sm-3 svg {
+    color: #F05F40;
+}
+
+/*images*/
+
+.row .col-sm-4 {
+    padding: 0;
+}
+
+/*download*/
+
+.download-block {
+    background-color: #212429
+}
+
+/*footer*/
+
+.mail {
+    color: #F05F40;
+}
