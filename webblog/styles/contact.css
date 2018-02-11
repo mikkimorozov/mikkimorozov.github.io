@@ -1,0 +1,33 @@
+/*blog*/
+
+div#bg-image-contact {
+    background-image: url(/images/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 60vh;
+    width: 100%;
+    margin-top: -80px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h1 p {
+    font-size: 5em;
+}
+
+.main-hr {
+    background-color: black;
+    width: 65px;
+}
+
+/*contact*/
+
+.contact-form {
+    width: 300px;
+}
+
+.form-group .form-control {
+}

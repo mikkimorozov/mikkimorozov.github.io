@@ -1,0 +1,98 @@
+/*articles*/
+
+.article-text {
+    text-align: justify;
+    width: 95%;
+}
+
+/*blog*/
+
+div#bg-image {
+    background-image: url(/images/blog_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin-top: -80px;
+}
+
+div#bg-image1 {
+    background-image: url(/images/blog_6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin-top: -80px;
+}
+
+div#bg-image2 {
+    background-image: url(/images/blog_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin-top: -80px;
+}
+
+div#bg-image3 {
+    background-image: url(/images/blog_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin-top: -80px;
+}
+
+div#bg-image4 {
+    background-image: url(/images/blog_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin-top: -80px;
+}
+
+div#bg-image5 {
+    background-image: url(/images/blog_5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin-top: -80px;
+}
+
+div#bg-image6 {
+    background-image: url(/images/blog_7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin-top: -80px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h1 p {
+    font-size: 5em;
+}
+
+.main-hr {
+    background-color: black;
+    width: 65px;
+}
