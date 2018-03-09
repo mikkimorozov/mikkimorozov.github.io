@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+#main-container .container {
+  background: #EEEEEE;
+  border-radius: 10px;
+  margin-top: 3%; }
+  #main-container .container .top-block {
+    padding-top: 5%; }
+    #main-container .container .top-block h1 {
+      font-size: 3.5em; }
+    #main-container .container .top-block .img-thumbnail {
+      padding: 0; }
+    #main-container .container .top-block .image-sign {
+      font-size: 14px; }
+  #main-container .container .bottom-block {
+    width: 80%; }
+    #main-container .container .bottom-block h3 {
+      padding-top: 4%;
+      font-size: 1.5em;
+      font-weight: 400; }
+    #main-container .container .bottom-block li {
+      font-size: 13.5px; }
+  #main-container .container .container-fluid .quote {
+    width: 75%; }
+    #main-container .container .container-fluid .quote blockquote {
+      text-align: left;
+      letter-spacing: 0;
+      padding-top: 5%;
+      font-size: 1.4em; }
+    #main-container .container .container-fluid .quote cite {
+      font-size: 14px; }
+  #main-container .container .container-fluid .wiki {
+    width: 80%;
+    padding-top: 4%;
+    font-size: 1.5em; }
+  @media only screen and (max-width: 600px) {
+    #main-container .container .container-fluid .wiki {
+      width: 100%; }
+    #main-container .container .container-fluid .quote {
+      width: 90%; } }
