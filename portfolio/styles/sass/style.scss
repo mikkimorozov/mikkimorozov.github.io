@@ -1,0 +1,381 @@
+// Custom styling
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+$paddings: 65px 0;
+$margins: 30px 0;
+$navColor: #ecf0f1;
+$carrotColor: #e67e22;
+$textColor: #34495e;
+$secondaryFont: 'PT Serif', serif;
+
+@mixin title {
+    font-size: 3em;
+    font-family: 'Lato', sans-serif;
+    display: block;
+}
+
+@mixin noMargin {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@mixin linkHover {
+    color: #16a085;
+    transition: all .3s ease-out;
+}
+
+hr.star {
+    margin: 30px auto 30px;
+    padding: 0;
+    max-width: 260px;
+    border: 0;
+    border-top: 3.5px solid;
+    text-align: center;
+}
+hr.star:after {
+    color: #fff;
+    content: "\2605";
+    position: relative;
+    top: -.9em;
+    padding: 0.25em;
+    font-size: 2.5em;
+}
+
+body {
+    position: relative;
+}
+
+// Navigation styling
+
+.navbar {
+    background: $textColor;
+    padding: 1%;
+    
+    button {
+        color: #fff;
+    }
+    .navbar-brand {
+        color: $navColor;
+        font-size: 2em;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+    
+    .navbar-brand:hover {
+        @include linkHover;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+        color: $navColor;
+        font-family: 'Cabin', sans-serif;
+        font-size: 1.2em;
+    }
+    
+    .navbar-nav .nav-item .nav-link:hover {
+        @include linkHover;
+    }
+    
+}
+
+// Main-container styling
+
+.main-container {
+    @include noMargin;
+    hr.star:after {
+        background: $navColor;
+        color: $carrotColor;
+    }
+    // Top-section styling
+    .top-section {
+        background: $navColor;
+        color: $textColor;
+        padding: $paddings;
+        .container-fluid {
+            width: 80%;
+        }
+    }
+    .margins {
+        margin: $margins;
+        
+        h3 {
+            @include title;
+        }
+        h2.skills {
+            padding-top: 10%;
+            font-size: 1.5em;
+            font-family: $secondaryFont;
+        }
+        .linked-link:hover {
+            text-decoration: none;
+        }
+        hr.star:after {
+            color: $carrotColor;
+        }
+    }
+    //Work section styling
+    
+    .work-section {
+        color: $textColor;
+        padding: $paddings;
+        .container-fluid {
+            font-family: $secondaryFont;
+            width: 85%;
+        }
+        
+        h3 {
+            @include title;
+        }
+        
+        hr.star:after {
+            color: $carrotColor;
+            background: #fff;
+        }
+        
+        .portfolio-item {
+            overflow: hidden;
+        }
+        
+        .portfolio-item a img {
+            margin: 20px 0;
+            opacity: 1;
+            transition: all .5s ease-out;
+            width: 100%;
+        }
+        
+        .portfolio-item a img:hover {
+            transform: scale(1.1);
+            opacity: .7;
+        }
+    }
+    
+    // Contact section styling
+    
+    .contact-section {
+        background: #ffeaa7;
+        color: $textColor;
+        padding: $paddings;
+        font-family: 'Lato', sans-serif;
+        
+        h3 {
+            @include title;
+        }
+        
+        h4 {
+            font-family: $secondaryFont;
+        }
+        
+        hr.star:after {
+            background: #ffeaa7;
+            color: $carrotColor;
+        }
+        
+
+        form {
+            margin-left:auto;
+            margin-right:auto;
+            width: 343px;
+            height: 360px;
+            padding:30px;
+            border: 1px solid rgba(0,0,0,.2);
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: rgba(52, 73, 94,.7);
+            -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.35);
+            -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.35);
+            box-shadow: 0 0 13px 3px rgba(0,0,0,.35);
+            overflow: hidden; 
+        }
+
+        textarea{
+              background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px; 
+            width: 276px;
+            height: 110px;
+            border: 1px solid rgba(255,255,255,.6);
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box; 
+            display:block;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size:18px;
+            color:#fff;
+            padding-left:45px;
+            padding-right:20px;
+            padding-top:12px;
+            margin-bottom:20px;
+            overflow:hidden;
+        }
+
+        input {
+            width: 276px;
+            height: 48px;
+            border: 1px solid rgba(255,255,255,.4);
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box; 
+            display:block;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size:18px;
+            color:#fff;
+            padding-left:20px;
+            padding-right:20px;
+            margin-bottom:20px;
+        }
+
+
+        input.name {
+              background: rgba(255, 255, 255, 0.1);
+              padding-left:45px;
+        }
+
+        input.email {
+              background: rgba(255, 255, 255, 0.1);
+              padding-left:45px;
+        }
+
+        textarea.message {
+              background: rgba(255, 255, 255, 0.1);
+              padding-left:45px;
+        }
+
+        ::-webkit-input-placeholder {
+              color: #fff;
+        }
+
+        :-moz-placeholder{ 
+            color: #fff; 
+        }
+
+        ::-moz-placeholder {
+            color: #fff;
+        }
+
+        :-ms-input-placeholder {  
+              color: #fff; 
+        }
+
+        input:focus, textarea:focus { 
+              background-color: rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+            -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+            box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+              overflow: hidden; 
+        }
+
+        .btn {
+            width: 138px;
+            height: 44px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 10px;
+            float:right;
+            border: 1px solid #253737;
+            background: #416b68;
+            background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+            background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+            background: -moz-linear-gradient(top, #6da5a3, #416b68);
+            background: -ms-linear-gradient(top, #6da5a3, #416b68);
+            background: -o-linear-gradient(top, #6da5a3, #416b68);
+            background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+            padding: 10.5px 21px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+            -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+            box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+            line-height: 10px;
+            text-shadow: #333333 0 1px 0;
+            font-weight: 700;
+            color: #e1e1e1;
+        }
+
+        .btn:hover {
+            border: 1px solid #253737;
+            text-shadow: #333333 0 1px 0;
+            background: #416b68;
+            background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+            background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+            background: -moz-linear-gradient(top, #77b2b0, #416b68);
+            background: -ms-linear-gradient(top, #77b2b0, #416b68);
+            background: -o-linear-gradient(top, #77b2b0, #416b68);
+            background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+            color: #fff;
+         }
+
+        .btn:active {
+            margin-top:1px;
+            text-shadow: #333333 0 -1px 0;
+            border: 1px solid #253737;
+            background: #6da5a3;
+            background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
+            background: -webkit-linear-gradient(top, #416b68, #609391);
+            background: -moz-linear-gradient(top, #416b68, #6da5a3);
+            background: -ms-linear-gradient(top, #416b68, #6da5a3);
+            background: -o-linear-gradient(top, #416b68, #6da5a3);
+            background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+            color: #fff;
+            -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+            -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+            box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+           }
+        
+    }
+}
+
+// Footer stylings
+
+#footer {
+    background: $textColor;
+    color: $navColor;
+    padding: 1%;
+    .row {
+        width: 90%;
+    }
+    
+    .left {
+        float: left;
+        
+        span {
+            font-family: 'Cabin', sans-serif;
+        }
+    }
+    
+    @media only screen and (max-width: 576px) {
+        .left {
+            text-align: center;
+            float: none;
+        }
+    }
+    
+    .right {
+        float: right;
+        display: none;
+        @media only screen and (min-width: 576px) {
+            display: block;
+        }
+        
+        a {
+            color: $navColor;
+        }
+        
+        a:hover {
+            @include linkHover;
+        }
+    }
+}
+

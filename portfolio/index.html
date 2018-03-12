@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Nick Morozov</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles/css/style.css" rel="stylesheet" type="text/css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header sticky-top" id="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+              <a class="navbar-brand text-uppercase pl-3" href="#top-section">Morozov</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-lg"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item pl-3">
+                    <a class="nav-link" href="#top-section">About</a>
+                  </li>
+                  <li class="nav-item pl-3">
+                    <a class="nav-link" href="#work">My Work</a>
+                  </li>
+                  <li class="nav-item pl-3">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+    </header>
+    <container class="main-container">
+        <section class="top-section text-center" id="top-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="margins">
+                            <h3>About</h3>
+                            <hr class="star">
+                            
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h2 class="skills">My name is Nick Morozov and I'm a beginner Front-end Developer living in Krakow, Poland. Now I'm taking part in course for creating web pages and studying this at home in free time. My skills you can see on my own <a href="https://www.linkedin.com/in/mikki-morozov/" target="_blank" class="linked-link">LinkedIn page</a>.</h2>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="images/about1.jpg" alt="My photo" class="rounded-circle mt-4" width="250px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="work-section text-center" id="work">
+            <div class="container-fluid">
+                <h3>My Work</h3>
+                <hr class="star"><br>
+                
+                <div class="row">
+                   
+                    <div class="col-md-4">
+                        <div class="portfolio-item pb-4">
+                            <a href="https://mikkimorozov.github.io/webblog/" target="_blank"><img src="images/portfolio_1.jpg" alt="portfolio-item"></a>
+                            <p>Grand Blog is multipage web-blog which was created with using library Bootstrap. On mobile devices and on PC looks differently. Blog is responsive for all devices. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="portfolio-item pb-4">
+                            <a href="https://mikkimorozov.github.io/timeagency/" target="_blank"><img src="images/portfolio_2.jpg" alt="portfolio-item"></a>
+                            <p>This page like designer portfolio. My second project on Bootstrap. Responsive for all devices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="portfolio-item pb-4">
+                            <a href="https://mikkimorozov.github.io/startbootstrap/" target="_blank"><img src="images/portfolio_3.jpg" alt="portfolio-item"></a>
+                            <p>Simple landing page and my first project with using Bootstrap library. Responsive for all devices. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="contact-section text-center" id="contact">
+            <h3>Contact Me</h3>
+            <hr class="star">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="contact-form col-md-12">
+                       
+                        <h4>Fill out the form and I will answear on your question</h4><br>
+                        
+                    <form action="send.php" method="post">
+                       
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Portfolio">
+                        <input type="hidden" name="admin_email" value="mymail.morozov@mail.com">
+                        <input type="hidden" name="form_subject" value="Form Subject">
+                       
+                        <input name="name" type="text" placeholder="What is your name?" class="name" required />
+                        <input name="emailaddress" placeholder="What is your email?" class="email" type="email" required />
+                        <textarea rows="4" cols="50" name="message" placeholder="Please enter your message" class="message" required></textarea>
+                        <button name="submit" class="btn" type="submit">Send</button>
+                    </form>     
+                    </div>
+                </div>
+            </div>
+        </section>
+    </container>
+    <footer class="footer" id="footer">
+        <div class="container-fluid">
+           <div class="row mx-auto">
+                <div class="col-12">
+                    <div class="left">
+                        <span>&copy 2018 Nick Morozov</span>
+                    </div>
+                    <div class="right">
+                        <span>
+                            <a class="ml-3" target="_blank" href="https://www.linkedin.com/in/mikki-morozov/"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                            <a class="ml-3" target="_blank" href="https://github.com/mikkimorozov"><i class="fab fa-github fa-lg"></i></a>
+                            <a class="ml-3" target="_blank" href="https://www.facebook.com/mikki.morozov"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a class="ml-3" target="_blank" href="https://www.instagram.com/morozov.nick/"><i class="fab fa-instagram fa-lg"></i></a>
+                        </span>
+                    </div>  
+                </div>    
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="script/jquery/jquery-3.3.1.js"></script>
+    <script src="script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
